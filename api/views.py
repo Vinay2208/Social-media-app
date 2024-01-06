@@ -16,10 +16,10 @@ posts = [
 ]
 
 
-def members(request):
+def home(request):
     context = {
         "posts": posts,
-        'title': "Latest Posts"
+        'title': "Home"
     }
     return render(request, "api/home.html", context)
 
